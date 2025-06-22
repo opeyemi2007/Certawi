@@ -1,4 +1,5 @@
 // import { Outlet } from 'react-router-dom'
+'use cient'
 import React from 'react'
 import Link from 'next/link'
 import styles from "./aboutUs.module.scss";
@@ -22,7 +23,7 @@ import Gallery5 from '../../public/gallery5.png'
 import Gallery6 from '../../public/gallery6.png'
 
 
-const aboutUs = ({children}) => {
+const Page = ({children}) => {
   return (
     <div id={styles.aboutUs} className={styles.about}>     
       <div className={styles.aboutHero}>
@@ -155,4 +156,4 @@ const aboutUs = ({children}) => {
   )
 }
 
-export default aboutUs
+export default Page
