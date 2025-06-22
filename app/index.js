@@ -14,7 +14,7 @@ export { default as FAQ } from "./FAQ/page";
 export { default as BulkPreview } from "./BulkPreview";
 export { default as BulkStep } from "./BulkStep";
 export { default as EditBulk } from "./EditBulk";
-export { default as Error } from "./Error";
+export { default as Error } from "./Error/page";
 export { default as ContactUs} from './contactUs';
 export { default as Career } from './Career';
 

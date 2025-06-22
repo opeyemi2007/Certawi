@@ -1,5 +1,5 @@
 import React from 'react';
-import './Comingsoon.css'
+import styles from'./Comingsoon.module.scss'
 import arrowRight from './images/arrowright.png'
 import github from './images/github.png'
 import instagra from './images/instagra.png'
@@ -10,43 +10,43 @@ import twitter from './images/twitter.png'
 
 function Comingsoon() {
   return (
-    <div id='comingsoon'>
-      <div className='container'>
-        <div className='main'>
-          <div className='welcome'>
-            <div className='welcomeHead'>
-              <div className='back'>
-                <img src={arrowRight} className='arrow' alt='arrow right'></img>
+    <div id={styles.comingsoon}>
+      <div className={styles.container}>
+        <div className={styles.main}>
+          <div className={styles.welcome}>
+            <div className={styles.welcomeHead}>
+              <div className={styles.back}>
+                <img src={arrowRight} className={styles.arrow} alt='arrow right'></img>
                 Back to Home
               </div>
-              <div className='f1'>Coming Soon!</div>
-              <div className='p'>
+              <div className={styles.f1}>Coming Soon!</div>
+              <div className={styles.p}>
                 We are currently working hard to build this page but you can
                 submit your email for update once the page is up.
               </div>
             </div>
-            <div className='construction'>
+            <div className={styles.construction}>
               <img
                 src={under_construction}
-                className='cons_img'
+                className={styles.cons_img}
                 alt=''></img>
             </div>
           </div>
           <div className='formdat'>
-            <form className='emyform'>
+            <form className={styles.emyform}>
               <input
-                type='email'
+                type={styles.email}
                 placeholder='Your email'
-                className='email'></input>
-              <button className='btn'>Notify me</button>
+                className={styles.email}></input>
+              <button className={styles.btn}>Notify me</button>
             </form>
-            <div className='spam'>~Don't worry we will not spam you~</div>
+            <div className={styles.spam}>~Don't worry we will not spam you~</div>
           </div>
         </div>
         <footer>
-          <div className='social'>
-            <div className='socail_des'>We are social</div>
-            <div className='socail_logo'>
+          <div className={styles.social}>
+            <div className={styles.socail_des}>We are social</div>
+            <div className={styles.socail_logo}>
               <img src={instagra} alt=''></img>
               <img src={linkedin} alt='linkedin'></img>
               <img src={twitter} alt='tiwitter'></img>

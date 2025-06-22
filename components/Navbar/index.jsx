@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import logo from "./assets/icon.png";
 import { FaBars } from "react-icons/fa";
 import Link from 'next/link';
+import Image from 'next/image'
 
 function Navbar() {
   const navRef = useRef();
@@ -30,7 +31,7 @@ function Navbar() {
     },
     {
       id: 4,
-      url: "/blog",
+      url: "/Error",
       text: "blog",
     },
     {
@@ -49,7 +50,7 @@ function Navbar() {
             <h2>
               Cert<span>awi</span>
             </h2>
-            <img src={logo} alt="certawi bulb" />
+            <Image src={logo} alt="certawi bulb" />
           </Link>
           <div className={styles['nav-click']}>
             <button className={styles.btn}>get started</button>
