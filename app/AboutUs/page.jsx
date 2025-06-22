@@ -1,28 +1,28 @@
 // import { Outlet } from 'react-router-dom'
 import React from 'react'
-import {Outlet, Link} from 'react-router-dom'
+import Link from 'next/link'
 import styles from "./aboutUs.module.scss";
 
-import IMG1 from '../../assets/IMG1.png'
+import IMG1 from '../../public/IMG1.png'
 
-import Value1 from '../../assets/value1.png'
-import Value2 from '../../assets/value2.png'
-import Value3 from '../../assets/value3.png'
+import Value1 from '../../public/value1.png'
+import Value2 from '../../public/value2.png'
+import Value3 from '../../public/value3.png'
 
-import Service1 from '../../assets/service1.png'
-import Service2 from '../../assets/service2.png'
-import Service3 from '../../assets/service3.png'
-import Service4 from '../../assets/service4.png'
+import Service1 from '../../public/service1.png'
+import Service2 from '../../public/service2.png'
+import Service3 from '../../public/service3.png'
+import Service4 from '../../public/service4.png'
 
-import Gallery1 from '../../assets/gallery1.png'
-import Gallery2 from '../../assets/gallery2.png'
-import Gallery3 from '../../assets/gallery3.png'
-import Gallery4 from '../../assets/gallery4.png'
-import Gallery5 from '../../assets/gallery5.png'
-import Gallery6 from '../../assets/gallery6.png'
+import Gallery1 from '../../public/gallery1.png'
+import Gallery2 from '../../public/gallery2.png'
+import Gallery3 from '../../public/gallery3.png'
+import Gallery4 from '../../public/gallery4.png'
+import Gallery5 from '../../public/gallery5.png'
+import Gallery6 from '../../public/gallery6.png'
 
 
-const aboutUs = () => {
+const aboutUs = ({children}) => {
   return (
     <div id={styles.aboutUs} className={styles.about}>     
       <div className={styles.aboutHero}>
@@ -150,7 +150,7 @@ const aboutUs = () => {
         </div> */}
 
 
-      <Outlet/>
+      {children}
     </div>
   )
 }
