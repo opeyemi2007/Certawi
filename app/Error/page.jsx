@@ -2,6 +2,7 @@ import styles from "./error.module.scss";
 import { BsArrowLeft } from "react-icons/bs";
 import errorImg from "./assets/page-not-found.png";
 import Link from 'next/link';
+import Image from 'next/image'
 
 const Page = () => {
   return (
@@ -15,15 +16,15 @@ const Page = () => {
         <Link className={styles.link} href="/">
           <button className={styles['btn-solid']}>Go to Certawi Home</button>
         </Link>
-        <Link className={styles.link}>
+        <div className={styles.link}>
           <button className={styles['btn-outline']}>
             <BsArrowLeft className={styles['arrow-left']} />
             Go Back
           </button>
-        </Link>
+        </div>
       </div>
       <div className={styles['error-image']}>
-        <img src={errorImg} alt="error 404" />
+        <Image src={errorImg} alt="error 404" />
       </div>
     </div>
   );
